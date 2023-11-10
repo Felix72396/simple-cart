@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(67, 67, 216);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header #logo{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 900;
+    position: relative;
+}
+
+section.cart-img{
+    position: relative;
+    padding: .5rem;
+}
+
+header section.cart-img::after{
+    content: attr(data-count);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(39, 49, 156);
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 80%;
+    color: #fff;
+    opacity: .8;
+    display: grid;
+    place-content: center;
+    font-size: 1.5rem;
+}
+
+main{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+}
+
+main h2{
+    font-size: 4rem;
+    text-align: center;
+}
+
+section.total-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.clear-button-container{
+    display: grid;
+    place-content: center;
+}
+
+section > button{
+    color: rgba(176, 22, 22, 0.85);
+    border: 1px solid rgba(176, 22, 22, 0.85);
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+section.item-container{
+    height: auto;
+}
+
+div.item{
+    height: 120px;
+    margin-bottom: .1rem;
+    padding: 1rem;
+    /* background-color: rgb(74, 78, 78); */
+}
+
+div.item:last-of-type{
+    margin-bottom: 0;
+}
+
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.img-item{
+    margin-right: 1rem;
+}
+
+div.img-item img{
+    width: 100px;
+}
+
+div.info-item > *{
+    margin-bottom: .5rem;
+}
+
+div.name-item b {
+    font-size: 2rem;
+}
+
+div.price-item small {
+    font-size: 1.5rem;
+    color: #7d7979;
+}
+
+div.remove-item button{
+    background-color: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    color: rgb(106, 115, 212);
+}
+
+div.remove-item button:hover{
+    background-color: #ebe4e4;
+}
+
+section.number-item{
+    padding: 1rem;
+}
+
+section.number-item input[type="number"]{
+    width: 80px;
+    font-size: 1.5rem;
+}
+
+section.total-container{
+    font-size: 1.5rem;
+}
