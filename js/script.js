@@ -5,22 +5,22 @@ const cart = document.getElementById("cart-img");
 
 let items = [
     {
-        source: "../img/apple.png",
+        source: "img/apple.png",
         name: "Apple",
         price: 1.3
     },
     {
-        source: "../img/lemon.png",
+        source: "img/lemon.png",
         name: "Lemon",
         price: 0.4
     },
     {
-        source: "../img/pear.png",
+        source: "img/pear.png",
         name: "Pear",
         price: 1.5
     },
     {
-        source: "../img/strawberry.png",
+        source: "img/strawberry.png",
         name: "Strawberry",
         price: 0.8
     }
